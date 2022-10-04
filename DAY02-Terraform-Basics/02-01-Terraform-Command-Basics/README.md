@@ -13,7 +13,7 @@
 - **Pre-Conditions-2:** Ensure AMI you are provisioning exists in that region if not update AMI ID 
 - **Pre-Conditions-3:** Verify your AWS Credentials in **$HOME/.aws/credentials**
 - By default, the credentials file is stored here:
-  - On Windows: C:\Users\username\.aws\credentials
+  - On Windows: C:\Users\username\ .aws\credentials
   - On Mac/Linux: ~/.aws/credentials
 ```t
 # Terraform Settings Block
