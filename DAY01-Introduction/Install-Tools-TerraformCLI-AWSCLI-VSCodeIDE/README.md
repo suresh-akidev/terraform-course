@@ -9,7 +9,6 @@
 
 ## Step-02: MACOS: Terraform Install
 - [Download Terraform MAC](https://www.terraform.io/downloads.html)
-- [Install CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - Unzip the package
 ```
 # Copy binary zip file to a folder
@@ -80,7 +79,6 @@ cat $HOME/.aws/credentials
 
 ## Step-06: WindowsOS: Terraform & AWS CLI Install
 - [Download Terraform](https://www.terraform.io/downloads.html)
-- [Install CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - Unzip the package
 - Create new folder `terraform-bins`
 - Copy the `terraform.exe` to a `terraform-bins`
@@ -89,4 +87,3 @@ cat $HOME/.aws/credentials
 
 ## Step-07: LinuxOS: Terraform & AWS CLI Install
 - [Download Terraform](https://www.terraform.io/downloads.html)
-- [Linux OS - Terraform Install](https://learn.hashicorp.com/tutorials/terraform/install-cli)
