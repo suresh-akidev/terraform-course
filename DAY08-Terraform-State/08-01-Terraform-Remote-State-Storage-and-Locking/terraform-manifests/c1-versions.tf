@@ -9,11 +9,14 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terra-157673692367"
-    key    = "dev/terraform.tfstate"
-    region = "ap-south-1" 
-    dynamodb_table = "terraform-dev-state-table"      
+    bucket = "terra-bucket-157673692367"
+    key = "test/terraform.tfstate"
+    region = "ap-south-1"
+
+    dynamodb_table = "terrafrom-dev-state-table"
+    
   }
+
 }
 
 # Provider Block

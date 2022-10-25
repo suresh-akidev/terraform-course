@@ -1,0 +1,2 @@
+ec2_instance_publicip = "65.2.182.59"
+ec2_publicdns = "ec2-65-2-182-59.ap-south-1.compute.amazonaws.com"
