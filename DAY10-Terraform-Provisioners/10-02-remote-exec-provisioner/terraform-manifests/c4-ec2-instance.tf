@@ -27,12 +27,10 @@ resource "aws_instance" "my-ec2-vm" {
 # Copies the file to Apache Webserver /var/www/html directory
   provisioner "remote-exec" {
     inline = [
-      "sleep 120", 
+      "sleep 30", 
       "sudo cp /tmp/file-copy.html /var/www/html"
     ]
   }
-
-
 }
 
 

@@ -10,10 +10,16 @@ resource "aws_instance" "my-ec2-vm" {
   }
 }
 
+resource "time_sleep" "wait_30_seconds" {
+  depends_on = [
+    aws_instance.my-ec2-vm
+  ]
+  create_duration = "60s"
+}
 
 # Sync App1 Static Content to Webserver using Provisioners
 resource "null_resource" "sync_app1_static" {
-  depends_on = [aws_instance.my-ec2-vm]
+  depends_on = [time_sleep.wait_30_seconds]
 
   # Connection Block for Provisioners to connect to EC2 Instance
   connection {
@@ -37,6 +43,9 @@ resource "null_resource" "sync_app1_static" {
     ]
   }
 
+  triggers = {
+    always-trigger = timestamp()
+  }
 }
 
 
