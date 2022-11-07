@@ -1,4 +1,5 @@
 #! /bin/bash
 sudo yum update -y
-sudo yum install -y ${package_name}
+sudo yum install -y ${package_name} ${second_package_name}
 sudo yum list installed | grep ${package_name} >> /tmp/package-installed-list.txt
+echo "second package name is => ${second_package_name}" >> /tmp/package-installed-list.txt

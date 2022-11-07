@@ -1,3 +1,3 @@
 high_availability = true
-name = "ttestset"
+name = ""
 number_of_instances = 2

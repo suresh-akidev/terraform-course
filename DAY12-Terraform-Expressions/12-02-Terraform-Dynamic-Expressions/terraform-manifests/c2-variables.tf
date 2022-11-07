@@ -28,7 +28,6 @@ variable "high_availability" {
 variable "name" {
   description = "The username assigned to the infrastructure"
   type = string 
-  default     = "ec2-user"
 }
 
 variable "team" {

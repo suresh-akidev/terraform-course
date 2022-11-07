@@ -18,12 +18,23 @@ variable "package_name" {
   default = "httpd"
 }
 
-variable "cidr_ip_ranges" {
-  type = map(list(string))
-  default =   {
-                "web" = ["10.0.1.0/24","10.0.2.0/24"], 
-                "app" = ["10.0.11.0/24","10.0.12.0/24"], 
-                "db" = ["10.0.21.0/24","10.0.22.0/24"], 
-              }
-            
+variable "second_package_name" {
+  description = "Provide Package that need to be installed with user_data"
+  type = string
+  default = "telnet"
 }
+
+# variable "cidr_ip_ranges" {
+#   type = map(any)
+#   default =   {
+#                 "web" = ["10.0.1.0/24","10.0.2.0/24"], 
+#                 "app" = ["10.0.11.0/24","10.0.12.0/24"], 
+#                 "db" = ["10.0.21.0/24","10.0.22.0/24"], 
+#               }
+            
+# }
+
+# variable "default_cidr_ip_ranges" {
+#   type = list(any)
+#   default = ["10.0.21.0/24","10.0.22.0/24"]
+# }
