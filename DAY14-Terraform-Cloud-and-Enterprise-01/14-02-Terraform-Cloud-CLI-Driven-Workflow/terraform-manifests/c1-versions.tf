@@ -14,3 +14,13 @@ provider "aws" {
   region  = var.aws_region
 }
 
+
+terraform {
+  cloud {
+    organization = "skillupwithstan"
+
+    workspaces {
+      name = "cli-workspace-test"
+    }
+  }
+}
